@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListUserMVVM</string>
+    <string name="tv_is_old">Is old :</string>
+    <string name="todo">TODO</string>
+</resources>

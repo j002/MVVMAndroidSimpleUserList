@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_14sdp"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_is_old"
+            android:layout_width="@dimen/_20ssp"
+            android:layout_height="@dimen/_20ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_is_old"
+            app:layout_constraintStart_toEndOf="@+id/tv_is_old"
+            app:layout_constraintTop_toTopOf="@+id/tv_is_old"
+            android:layout_marginStart="@dimen/_15sdp"
+            tools:srcCompat="@drawable/valid"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_job_title_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Developer"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_user"
+            app:layout_constraintTop_toTopOf="@+id/iv_user" />
+
+        <TextView
+            android:id="@+id/tv_is_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="@string/tv_is_old"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tv_job_title_user"
+            app:layout_constraintTop_toBottomOf="@+id/tv_job_title_user" />
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/iv_user"
+            app:layout_constraintStart_toStartOf="@+id/iv_user"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user"
+            tools:text="Didier Kouassi" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_user" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:background="@drawable/placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
