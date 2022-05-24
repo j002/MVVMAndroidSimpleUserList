@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fr.djibril.listusermvvm">
+    package="com.fr.wesense.listusermvvm">
 
     <application
-        android:name=".App"
+        android:name="com.fr.wesense.listusermvvm.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,18 +15,12 @@
         android:theme="@style/Theme.ListUserMVVM"
         tools:targetApi="31">
         <activity
-            android:name=".ui.user.ListUserActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".MainActivity"
+            android:name="com.fr.wesense.listusermvvm.ui.user.ListUserActivity"
             android:exported="true">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

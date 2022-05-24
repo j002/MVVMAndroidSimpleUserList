@@ -8,7 +8,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_users"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         android:layout_width="@dimen/match_constraint"
+        android:orientation="vertical"
         android:layout_height="wrap_content"
         tools:listitem="@layout/item_user_view"
         app:layout_constraintEnd_toEndOf="parent"
